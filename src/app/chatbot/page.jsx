@@ -1,4 +1,4 @@
-import styles from '../../styles/layout/app/Chatbot/Chatbot.module.scss'
+import styles from '../../styles/layout/app/Chatbot/chatbot.module.scss'
 
 export default function Chatbot() {
     return (

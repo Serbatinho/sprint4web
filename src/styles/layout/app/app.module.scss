@@ -1,0 +1,7 @@
+@import '../../base';
+
+body {
+    min-width: 350px;
+
+    @include normalize;
+}
