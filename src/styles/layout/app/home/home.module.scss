@@ -26,6 +26,20 @@
   height: auto;
 }
 
+.know-button{
+  @include std-button;
+  @include dynamic-border;
+  width: auto;
+  align-self: flex-start;
+  background-color: #262B5E;
+  border-color: #262B5E;
+
+  &:hover{
+    background-color: #EE5508;
+    border-color: #EE5508;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .image-home{
     align-self: flex-end;

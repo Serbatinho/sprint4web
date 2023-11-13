@@ -18,7 +18,7 @@ export default function Home() {
             quanto para o atendente para que não haja erros por parte do usuário
             e as informações sejam compreendidas rapidamente pelo service
             desk</p>
-          <Link href='/saiba-mais' className="dynamic-border btn">SAIBA MAIS</Link>
+          <Link href='/saiba-mais' className={`${styles["know-button"]}`}>SAIBA MAIS</Link>
           <Image src='/img/homecar.png' alt="Carro Proteção Pesada" className={`${styles["image-home"]}`} width={416} height={338} />
         </div>
       </main>

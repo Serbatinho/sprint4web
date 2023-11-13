@@ -8,6 +8,7 @@ export default function Header() {
             <navbar className={styles["navbar-header"]}>
                 <Link href='/integrantes'>Integrantes</Link>
                 <Link href='/materias'>Máterias</Link>
+                <Link href='/materias'>APIs</Link>
                 <span>|</span>
                 <Link href='/chatbot' className={styles["giant-button"]}>Chatbot</Link>
                 <Link href='/' className={styles["home-button"]}>Home</Link>
