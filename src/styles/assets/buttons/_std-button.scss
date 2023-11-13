@@ -1,0 +1,28 @@
+@mixin std-button {
+    padding: 1rem 1.2rem 0.8rem 1.2rem;
+    color: #fff;
+    border-width: 2.5px;
+    border-style: solid;
+    border-color: #EE5508;
+    background-color: #EE5508;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+
+    &::after {
+        content: "";
+        justify-self: center;
+        width: 0%;
+        height: 2px;
+        background-color: #fff;
+        transition: 0.4s ease-in-out;
+    }
+
+    &:hover {
+        border-color: transparent;
+        background-color: #2C326C;
+        text-shadow: none;
+    }
+
+}
+

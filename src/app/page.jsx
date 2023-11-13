@@ -1,11 +1,6 @@
-// import { Link } from "react-router-dom";
 
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
-
-// import '../../styles/Home.css'
-
-// import carro from '../../images/homecar.png'
 
 export default function Home() {
   return (
@@ -21,8 +16,9 @@ export default function Home() {
             quanto para o atendente para que não haja erros por parte do usuário
             e as informações sejam compreendidas rapidamente pelo service
             desk</p>
-          <Link href='/' className="dynamic-border btn">SAIBA MAIS</Link>
-          <Image src={""} alt="Carro Proteção Pesada" className="image-home" />
+          <Link href='/saiba-mais' className="dynamic-border btn">SAIBA MAIS</Link>
+          {/* <Image src='/img/homecar.png' alt="Carro Proteção Pesada" className="image-home" /> */}
+          {/* width={290} height={auto} */}
         </div>
       </main>
     </>

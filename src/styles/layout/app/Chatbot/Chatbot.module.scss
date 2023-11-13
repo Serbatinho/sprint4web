@@ -1,0 +1,45 @@
+@import '../../../assets';
+
+.full-content-container{
+    @include ilimitedview-container;
+
+    .mid-content-container{
+        display:flex;
+        align-items:center;
+
+        .chatbot-screen{
+            width: 100%;
+            height: 80vh;
+            border: 1px solid #262B5E;
+            border-radius: 8px;
+            max-width: 600px;
+            max-height: auto;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+
+                
+            .chatbot-controlpanel {
+                display: flex;
+                margin: 10px 15px;
+                gap: 20px;
+                width: 100%;
+
+                input {
+                    border: 1px solid #262B5E;
+                    border-radius: 8px;
+                    outline: none;
+                    background-color: #ffffff;
+                    width: 200%;
+                }
+
+                button {
+                    @include std-button;
+                    @include dynamic-border;
+                }
+            }
+        }
+
+    }
+    
+}

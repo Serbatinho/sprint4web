@@ -1,0 +1,10 @@
+Footer {
+    background-color: #262B5E;
+    height: auto;
+    padding: 15px 10px;
+}
+
+Footer > p {
+    color:#fff;
+    text-align: center;
+}

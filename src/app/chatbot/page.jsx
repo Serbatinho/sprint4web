@@ -1,18 +1,20 @@
+import styles from '../../styles/layout/app/Chatbot/Chatbot.module.scss'
+
 export default function Chatbot() {
     return (
         <>
-            <main className="full-container">
-                <div className="mid-container mid-container-chatbot">
-                    <div className="chatbot-screen">
+            <main className={`${styles['full-content-container']}`}>
+                <div className={`${styles["mid-content-container"]}`}>
+                    <div className={`${styles["chatbot-screen"]}`}>
 
-                        <form onSubmit="" className="chatbot-controlpanel">
+                        <form onSubmit="" className={`${styles["chatbot-controlpanel"]}`}>
                             <input
                                 type="text"
                                 id="mensagem"
                                 name="mensagem"
                                 value=""
                             />
-                            <button type="submit" className='btn dynamic-border'>Enviar</button>
+                            <button type="submit">Enviar</button>
                         </form>
                     </div>
                 </div>
