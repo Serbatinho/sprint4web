@@ -1,0 +1,48 @@
+@import '../../../base';
+@import '../../../assets';
+@import '../../../common';
+
+.navbar-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    height: 15vh;
+  
+    * {
+      margin: 5px;
+      font-size: 1.25rem;
+      font-weight: bold;
+
+      &:hover{
+        color: #1D2148
+      }
+    }
+  
+    .giant-button {
+      @include std-button;
+      @include dynamic-border;
+    }
+
+    .home-button {
+      width: 100%;
+      background-color: #262B5E;
+      color: #fff;
+      margin: 0;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 2rem;
+      
+      @include dynamic-border;
+    }
+  
+    &:last-child {
+      order: 2;
+    }
+  
+    @media screen and (min-width: 600px) {
+      .btn-chatbot {
+        margin-right: 3vw;
+      }
+    }
+  }

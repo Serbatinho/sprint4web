@@ -5,8 +5,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Titillium+Web&display=swap');
 
-@mixin normalize {
-
 *{
     text-decoration: none;
     color: #2C326C;
@@ -32,6 +30,7 @@
   
   body {
     margin: 0;
+    min-width: 350px;
   }
   
   /**
@@ -357,5 +356,3 @@
   [hidden] {
     display: none;
   }
-
-}

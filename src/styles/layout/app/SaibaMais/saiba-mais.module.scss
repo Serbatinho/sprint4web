@@ -1,0 +1,24 @@
+@import '../../../base';
+@import '../../../assets';
+@import '../../../common';
+
+.image-saiba {
+    width: clamp(150px, 35vw, 500px);
+    height: auto;
+}
+
+.full-content-container{
+    @include ilimitedview-container;
+
+    .mid-content-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 1000px;
+        padding: 0 3rem;
+    
+        p {
+            font-size: clamp(16px,1vw,100px);
+        }
+    }
+}

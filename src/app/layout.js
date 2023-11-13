@@ -1,6 +1,10 @@
+import './globals.scss';
+
 import Footer from '@/components/Footer/Footer'
 import Header from '@/components/Header/Header'
 import { Inter } from 'next/font/google'
+
+
 
 const inter = Inter({ subsets: ['latin'] })
 

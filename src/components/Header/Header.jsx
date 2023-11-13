@@ -1,15 +1,17 @@
 import Link from "next/link";
 
+import styles from '../../styles/layout/components/Header/header.module.scss'
+
 export default function Header() {
     return (
         <>
-            <navbar className="navbar-header">
+            <navbar className={styles["navbar-header"]}>
                 <Link href='/integrantes'>Integrantes</Link>
                 <Link href='/materias'>Máterias</Link>
                 <span>|</span>
-                <Link href='/chatbot' className="dynamic-border btn btn-chatbot">Chatbot</Link>
-                <Link href='/' className="home-button">Home</Link>
-            </navbar>
+                <Link href='/chatbot' className={styles["giant-button"]}>Chatbot</Link>
+                <Link href='/' className={styles["home-button"]}>Home</Link>
+            </navbar >
         </>
     )
 }

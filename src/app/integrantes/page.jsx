@@ -1,33 +1,35 @@
-// import integrante from '../../images/integrante.png'
+import Image from "next/image";
+
+import styles from "../../styles/layout/app/Integrantes/Integrantes.module.scss"
 
 export default function Integrantes() {
     return (
         <>
-            <main className="full-container full-container-integrantes">
-                <div className="mid-container-integrantes">
-                    <h1 className='title-integrantes'>INTEGRANTES</h1>
+            <main className={`${styles["full-content-container"]}`} >
+                <div className={`${styles["mid-content-container"]}`}>
+                    <h1 className={`${styles['title-integrantes']}`}>INTEGRANTES</h1>
                     <figure>
-                        {/* <img className="image-integrante" src={integrante} alt="Integrante 1" /> */}
-                        <figcaption>RM551821 - Lucas Serbato</figcaption>
+                        <Image className={`${styles["image-integrante"]}`} src="/img/integrante.png" width="316" height="350" alt="Integrante 1" />
+                        <figcaption>RM551821 - Lucas Serbato de Barros</figcaption>
                     </figure>
                     <figure>
-                        {/* <img className="image-integrante" src={integrante} alt="Integrante 2" /> */}
+                        <Image className={`${styles["image-integrante"]}`} src="/img/integrante.png" width="316" height="350" alt="Integrante 2" />
                         <figcaption>RM550200 - Leonardo Oliveira Esparza</figcaption>
                     </figure>
                     <figure>
-                        {/* <img className="image-integrante" src={integrante} alt="Integrante 3" /> */}
+                        <Image className={`${styles["image-integrante"]}`} src="/img/integrante.png" width="316" height="350" alt="Integrante 3" />
                         <figcaption>RM552421 - Flavio Sousa Vasconcelos</figcaption>
                     </figure>
                     <figure>
-                        {/* <img className="image-integrante" src={integrante} alt="Integrante 4" /> */}
+                        <Image className={`${styles["image-integrante"]}`} src="/img/integrante.png" width="316" height="350" alt="Integrante 4" />
                         <figcaption>RM552368 - Wellington de Oliveira Urcino da Silva</figcaption>
                     </figure>
                     <figure>
-                        {/* <img className="image-integrante" src={integrante} alt="Integrante 5" /> */}
+                        <Image className={`${styles["image-integrante"]}`} src="/img/integrante.png" width="316" height="350" alt="Integrante 5" />
                         <figcaption>RM97887 - João Carlos França Figueiredo</figcaption>
                     </figure>
                 </div>
-            </main>
+            </main >
         </>
     )
 }

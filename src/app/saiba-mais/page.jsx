@@ -1,13 +1,14 @@
-// import '../../styles/SaibaMais.css'
-// import carro from '../../images/homecar.png'
+import styles from '../../styles/layout/app/SaibaMais/saiba-mais.module.scss'
+
+import Image from "next/image";
 
 export default function SaibaMais() {
     return (
         <>
-            <main className="full-container">
-                <div className="mid-container mid-container-saiba">
+            <main className={`${styles["full-content-container"]}`}>
+                <div className={`${styles["mid-content-container"]}`}>
                     <figure>
-                        {/* <img className="image-saiba" src={carro} alt="Saiba Mais" /> */}
+                        <Image width="416" height="338" className={`${styles["image-saiba"]}`} src="/img/homecar.png" alt="Saiba Mais" />
                         <figcaption>Projeto Proteção Pesada</figcaption>
                     </figure>
                     <p>A princípio, o projeto se tratava de consertar o sistema de aquisição e modelagem de dados da Porto, mas após o primeiro Sprint foi identificado que o problema provavelmente se reside em processos. Então o primeiro passo deve ser entrevistar algum centro operacional da Porto para averiguar o problema.</p>

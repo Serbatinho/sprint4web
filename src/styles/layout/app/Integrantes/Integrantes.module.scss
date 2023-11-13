@@ -1,0 +1,85 @@
+@import '../../../base';
+@import '../../../assets';
+@import '../../../common';
+
+.full-content-container {
+    @include ilimitedview-container;
+
+    .mid-content-container {
+        align-items: center;
+        gap: 40px 0px;
+        padding-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        
+        .title-integrantes{
+            margin-bottom: 60px;
+            margin-top: 100px;
+            text-align: center;
+            
+            
+        }
+        figure{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            figcaption {
+                width: 100%;
+                font-weight: bold;
+                /* white-space: nowrap; */
+                text-align: center;
+            }
+            
+            .image-integrante {
+                width: 10rem;
+                height: auto;
+            }
+            
+        }
+
+
+
+    }
+
+}
+
+
+
+
+
+/* @media (min-width: 768px) {
+    figure{
+        width: 50%;
+    }
+
+    .mid-container-integrantes {
+        gap: 40px 40px;
+        flex-direction: flex-start;
+    }
+} */
+
+@media screen and (min-width: 768px) {
+    
+    .full-content-container {
+        .mid-content-container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+            max-width: 800px;
+            justify-content: center;
+            padding-bottom: 8rem;
+
+            .title-integrantes{
+                width: 100%;
+            }
+
+            figure {
+                width: 40%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    
+  }
